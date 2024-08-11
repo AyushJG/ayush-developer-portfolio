@@ -1,35 +1,49 @@
-name: Deploy Next.js
+name: Node.js CI
 
 on:
   push:
-    branches:
-      - master
+    branches: [master]
+  pull_request:
+    branches: [master]
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
         with:
-          node-version: "16" # or your specified version
+          node-version: ${{ matrix.node-version }}
+          cache: "yarn"
 
-      - name: Install dependencies
-        run: npm install
+      - name: Installing Packages 🥁
+        run: yarn install
 
-      - name: Build
-        run: npm run build
+      - name: Building 🧱
+        run: yarn build
+        env:
+          NEXT_PUBLIC_TRACKING_ID: ${{ secrets.NEXT_PUBLIC_TRACKING_ID }}
+          NEXT_PUBLIC_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_SERVICE_ID }}
+          NEXT_PUBLIC_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_TEMPLATE_ID }}
+          NEXT_PUBLIC_USER_ID: ${{ secrets.NEXT_PUBLIC_USER_ID }}
 
-      - name: Export
-        run: npm run export
+      - name: Exporting Bundle Files 🎪
+        run: yarn export
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Create .nojekyll file
+        run: touch ./out/.nojekyll
+
+      - name: Deploy to GitHub Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          github_token: ${{ secrets.DEPLOY_TOKEN }}
-          publish_dir: ./out
-          publish_branch: gh-pages
+          branch: gh-pages
+          folder: out
+          token: ${{ secrets.DEPLOY_TOKEN }}
