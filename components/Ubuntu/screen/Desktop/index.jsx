@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import BackgroundImage from "../../../util components/background-image";
+import BackgroundImage from "../../../utils/background-image";
 import SideBar from "../Sidebar";
 import apps from "../../../../apps.config";
 import Window from "../../../base/WindowApp";

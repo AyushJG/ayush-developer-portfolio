@@ -1,7 +1,7 @@
 export const project_list = [
   {
     name: "jg-chess",
-    date: "Aug 2024",
+    date: "2024",
     github: "https://github.com/AyushJG/jg-chess",
     go: "https://ayushjg.github.io/jg-chess/",
     description: [
@@ -11,7 +11,7 @@ export const project_list = [
   },
   {
     name: "jg collab (Miro board clone)",
-    date: "Sep 2024",
+    date: "2024",
     github: "https://github.com/AyushJG/JG-Collab",
     go: "https://jg-collab.vercel.app/",
     description: [
@@ -19,10 +19,18 @@ export const project_list = [
     ],
     domains: ["Typescript", "Next.js", "Tailwind css", "ReactJS", "ShadcnUI"],
   },
+  {
+    name: "Cheesy-bites",
+    date: "2024",
+    github: "https://github.com/AyushJG/cheesy-bites",
+    go: "https://ayushjg.github.io/cheesy-bites/",
+    description: ["This is a Ecommerce Food delivery web application."],
+    domains: ["Bootstrap", "ReactJS", "Redux"],
+  },
 
   {
     name: "Ayush Portfolio",
-    date: "March 2024",
+    date: "2024",
     github: "https://github.com/AyushJG",
     go: "https://ayushjg.github.io/AyushJG/",
     description: [
@@ -32,7 +40,7 @@ export const project_list = [
   },
   {
     name: "chasma-pasal (glasses store)",
-    date: "April 2023",
+    date: "2023",
     github: "https://github.com/AyushJG/chasma-pasal",
     go: "https://ayushjg.github.io/chasma-pasal/",
     description: ["This is a B2C eccomerce website for buying glasses online."],
@@ -40,7 +48,7 @@ export const project_list = [
   },
   {
     name: "hangman",
-    date: "March 2023",
+    date: "2023",
     github: "https://github.com/AyushJG/hangman",
     go: "https://ayushjg.github.io/hangman/",
     description: [
@@ -50,7 +58,7 @@ export const project_list = [
   },
   {
     name: "Tic-tac-toe",
-    date: "Sep 2022",
+    date: "2022",
     github: "https://github.com/AyushJG/Tic-tac-toe",
     go: "https://ayushjg.github.io/Tic-tac-toe/",
     description: [
@@ -60,7 +68,7 @@ export const project_list = [
   },
   {
     name: "Pujamandu",
-    date: "Nov 2020",
+    date: "2020",
     github: "https://pujamandu.com/",
     go: "https://pujamandu.com/",
     description: [

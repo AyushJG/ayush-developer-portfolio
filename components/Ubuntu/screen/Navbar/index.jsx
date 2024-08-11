@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Clock from "../LockScreen/utils/Clock";
-import Status from "../../../util components/status";
-import StatusCard from "../../../util components/status_card";
+import Status from "../../../utils/status";
+import StatusCard from "../../../utils/status_card";
 
 const Navbar = ({ shutDown, lockScreen }) => {
   const [statusCard, setStatusCard] = useState(false);
