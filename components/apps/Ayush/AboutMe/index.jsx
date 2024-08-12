@@ -70,7 +70,7 @@ export const AboutAyush = () => {
   useEffect(() => {
     const lastVisitedScreen = localStorage.getItem("about-section") || "about";
     changeScreen({ id: lastVisitedScreen });
-  }, [changeScreen]);
+  }, []);
 
   return (
     <div className="w-full h-full flex bg-ub-cool-grey text-white select-none relative">
