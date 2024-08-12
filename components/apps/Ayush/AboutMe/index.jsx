@@ -1,103 +1,76 @@
-import React, { useCallback, useState, useEffect } from "react";
-import AboutSectionDetails from "./AboutSectionDetails";
-import { navItems } from "../config";
-import Education from "../Education";
-import Skills from "../Skills";
-import Projects from "../Projects";
-import Resume from "../Resume";
-import Experience from "../Experience";
-import Confidentials from "../Confidentials";
-
-export const AboutAyush = () => {
-  const [screen, setScreen] = useState(<AboutSectionDetails />);
-  const [activeScreen, setActiveScreen] = useState("about");
-  const [navbar, setNavbar] = useState(false);
-
-  const screens = {
-    about: <AboutSectionDetails />,
-    education: <Education />,
-    experience: <Experience />,
-    skills: <Skills />,
-    projects: <Projects />,
-    confidentials: <Confidentials />,
-    resume: <Resume />,
-  };
-
-  const changeScreen = useCallback(
-    (e) => {
-      const screenId = e.id || e.target.id;
-
-      // Store the state
-      localStorage.setItem("about-section", screenId);
-
-      setScreen(screens[screenId]);
-      setActiveScreen(screenId);
-    },
-    [screens]
-  );
-
-  const showNavBar = () => {
-    setNavbar((prevNavbar) => !prevNavbar);
-  };
-
-  const renderNavLinks = () => {
-    return (
-      <>
-        {navItems.map(({ id, label, iconSrc }) => (
-          <div
-            key={id}
-            id={id}
-            tabIndex="0"
-            onFocus={changeScreen}
-            className={`${
-              activeScreen === id
-                ? "bg-ub-orange bg-opacity-100 hover:bg-opacity-95"
-                : "hover:bg-gray-50 hover:bg-opacity-5"
-            } w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5`}
-          >
-            <img
-              className="w-3 md:w-4 "
-              alt={`${label.toLowerCase()} icon`}
-              src={iconSrc}
-            />
-            <span className="ml-1 md:ml-2 text-gray-50">{label}</span>
-          </div>
-        ))}
-      </>
-    );
-  };
-
-  useEffect(() => {
-    const lastVisitedScreen = localStorage.getItem("about-section") || "about";
-    changeScreen({ id: lastVisitedScreen });
-  }, []);
-
+import React from "react";
+const AboutMe = () => {
   return (
-    <div className="w-full h-full flex bg-ub-cool-grey text-white select-none relative">
-      <div className="md:flex hidden flex-col w-1/4 md:w-1/5 text-sm overflow-y-auto windowMainScreen border-r border-black">
-        {renderNavLinks()}
+    <>
+      <div className="w-48 md:w-64 my-4 bg-white rounded-full">
+        <img
+          className="w-full"
+          src="./images/logos/me.png"
+          alt="Ayush Timalsina"
+        />
       </div>
-      <div
-        onClick={showNavBar}
-        className="md:hidden flex flex-col items-center justify-center absolute bg-ub-cool-grey rounded w-6 h-6 top-1 left-1"
-      >
-        <div className="w-3.5 border-t border-white"></div>
-        <div
-          className="w-3.5 border-t border-white"
-          style={{ marginTop: "2pt", marginBottom: "2pt" }}
-        ></div>
-        <div className="w-3.5 border-t border-white"></div>
-        <div
-          className={`${
-            navbar ? "visible animateShow z-30" : "invisible"
-          } md:hidden text-xs absolute bg-ub-cool-grey py-0.5 px-1 rounded-sm top-full mt-1 left-0 shadow border-black border border-opacity-20`}
-        >
-          {renderNavLinks()}
+      <div className="text-lg md:text-2xl px-1 mt-4 md:mt-8">
+        <div className="align">
+          My name is <span className="font-bold">Ayush Timalsina</span>,
+        </div>
+        <div className="font-normal mt-1">
+          <span className="relative inline-block whitespace-nowrap overflow-hidden border-r-2 border-pink-600 animate-typewriter">
+            <span className="relative inline-block text-pink-600">
+              Product Engineer specializing in Frontend
+            </span>
+          </span>
         </div>
       </div>
-      <div className="flex flex-col w-3/4 md:w-4/5 justify-start items-center flex-grow bg-ub-grey overflow-y-auto windowMainScreen">
-        {screen}
+      <div className=" mt-4 relative md:my-8 pt-px bg-white w-4/5 md:w-4/5">
+        <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-0"></div>
+        <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-0"></div>
       </div>
-    </div>
+      <ul className=" mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list mb-4">
+        <li className=" list-pc">
+          I'm a <span className=" font-medium">Graduated Student</span>{" "}
+          currently working as Product Engineer. I've completed my 2.5 Years as
+          Product Engineer at{" "}
+          <u className=" cursor-pointer ">
+            {" "}
+            <a
+              href="https://en.wikipedia.org/wiki/HackerRank"
+              target={"_blank"}
+            >
+              Varicon
+            </a>{" "}
+          </u>
+          , and now I'm looking for full-time{" "}
+          <span className=" font-medium"> Product/Frontend engineer</span>{" "}
+          roles! ( Hit me up at{" "}
+          <a className="text-underline" href="mailto:ayushtimalcina@gmail.com">
+            <u>@ayushtimalcina@gmail.com</u>
+          </a>{" "}
+          :)
+        </li>
+        <li className=" mt-3 list-building">
+          {" "}
+          I enjoy building awesome softwares that solve practical problems.
+        </li>
+        <li className=" mt-3 list-time">
+          {" "}
+          When I am not coding my next project, I like to spend my time singing
+          playing guitar or playing video games.
+        </li>
+        <li className="mt-3 list-star">
+          Beyond my technical pursuits, I also embrace the role of an
+          entrepreneur. I also manage a part-time business in Nepal named{" "}
+          <a
+            target="_blank"
+            className="text-underline"
+            href="https://pujamandu.com/"
+          >
+            <u>Pujamandu</u>
+          </a>
+          .
+        </li>
+      </ul>
+    </>
   );
 };
+
+export default AboutMe;

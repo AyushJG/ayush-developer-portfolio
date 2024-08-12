@@ -3,7 +3,7 @@ import { displaySettings } from "./components/apps/Settings";
 import { displayChrome } from "./components/apps/Chrome";
 import { displayTrash } from "./components/apps/Trash";
 import { displayContact } from "./components/apps/Contact";
-import { displayAboutAyush } from "./components/apps/Ayush";
+import { AboutAyush, displayAboutAyush } from "./components/apps/Ayush";
 
 const apps = [
   {
@@ -23,7 +23,7 @@ const apps = [
     disabled: false,
     favourite: true,
     desktop_shortcut: true,
-    screen: displayAboutAyush,
+    screen: AboutAyush,
   },
 
   {
