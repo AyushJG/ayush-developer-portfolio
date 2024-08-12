@@ -344,16 +344,13 @@ const Desktop = ({ bg_image_name, changeBackgroundImage }) => {
     setMinimizedWindows((prev) => {
       const updatedMinimizedWindows = { ...prev, [objId]: true };
 
-      // Remove focus from this window
       setFocusedWindows((prev) => {
         const updatedFocusedWindows = { ...prev, [objId]: false };
         return updatedFocusedWindows;
       });
 
-      // Update sidebar visibility
       hideSideBarAction(null, false);
 
-      // Give focus to the last opened app
       giveFocusToLastApp();
 
       return updatedMinimizedWindows;
