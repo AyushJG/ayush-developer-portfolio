@@ -32,10 +32,7 @@ const AboutMe = () => {
           Product Engineer at{" "}
           <u className=" cursor-pointer ">
             {" "}
-            <a
-              href="https://en.wikipedia.org/wiki/HackerRank"
-              target={"_blank"}
-            >
+            <a href="https://varicon.com.au/" target={"_blank"}>
               Varicon
             </a>{" "}
           </u>
