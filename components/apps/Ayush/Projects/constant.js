@@ -1,23 +1,25 @@
 export const project_list = [
   {
-    name: "jg-chess",
-    date: "2024",
-    github: "https://github.com/AyushJG/jg-chess",
-    go: "https://ayushjg.github.io/jg-chess/",
-    description: [
-      "This is a offline chess game made using typescript as a summer project.",
-    ],
-    domains: ["HTML", "CSS", "Typescript", "ReactJS", "Vite"],
-  },
-  {
     name: "jg collab (Miro board clone)",
     date: "2024",
     github: "https://github.com/AyushJG/JG-Collab",
     go: "https://jg-collab.vercel.app/",
     description: [
-      "This is a miro board clone named after my nickname JG-Collab. It is a web application that allows users to create and collaborate on boards.",
+      "This is a miro board clone named after my nickname JG-Collab. ",
+      "It is a web application that allows users to create and collaborate on boards.",
     ],
     domains: ["Typescript", "Next.js", "Tailwind css", "ReactJS", "ShadcnUI"],
+  },
+  {
+    name: "course-nepal",
+    date: "2024",
+    github: "https://github.com/AyushJG/course-nepal",
+    go: "https://course-nepal.onrender.com/",
+    description: [
+      "This project involves designing a concept page for a course-selling website. ",
+      "The primary objective is to enhance my skills in Material-UI, Next.js, and TypeScript.",
+    ],
+    domains: ["HTML", "CSS", "Typescript", "ReactJS", "Material-Ui"],
   },
   {
     name: "Cheesy-bites",
@@ -37,6 +39,16 @@ export const project_list = [
       "Personal portfolio website of theme Random OS, made using NEXT.js & tailwind CSS",
     ],
     domains: ["HTML", "CSS", "Javascript"],
+  },
+  {
+    name: "jg-chess",
+    date: "2024",
+    github: "https://github.com/AyushJG/jg-chess",
+    go: "https://ayushjg.github.io/jg-chess/",
+    description: [
+      "This is a offline chess game made using typescript as a summer project.",
+    ],
+    domains: ["HTML", "CSS", "Typescript", "ReactJS", "Vite"],
   },
   {
     name: "chasma-pasal (glasses store)",
@@ -62,7 +74,8 @@ export const project_list = [
     github: "https://github.com/AyushJG/Tic-tac-toe",
     go: "https://ayushjg.github.io/Tic-tac-toe/",
     description: [
-      "It's a Tic-tac-toe which is a two-player game played on a 3x3 grid. The objective of the game is to be the first player to get three of their marks in a row, either horizontally, vertically, or diagonally.",
+      "It's a Tic-tac-toe which is a two-player game played on a 3x3 grid. ",
+      "The objective of the game is to be the first player to get three of their marks in a row, either horizontally, vertically, or diagonally.",
     ],
     domains: ["HTML", "CSS", "Javascript"],
   },
