@@ -19,6 +19,7 @@ function DesktopMenu(props) {
   };
 
   const checkFullScreen = () => {
+    debugger;
     if (document.fullscreenElement) {
       setIsFullScreen(true);
     } else {
