@@ -11,6 +11,25 @@ export const project_list = [
     domains: ["Typescript", "Next.js", "Tailwind css", "ReactJS", "ShadcnUI"],
   },
   {
+    name: "jg-resume-builder",
+    date: "2024",
+    github: "https://github.com/AyushJG/jg-resume-builder",
+    go: "https://jg-resume-builder.onrender.com/",
+    description: [
+      " Easy and convenient resume builder made using next and react js. ",
+    ],
+    domains: [
+      "HTML",
+      "CSS",
+      "Typescript",
+      "ReactJS",
+      "Next JS",
+      "Redux",
+      "Formik",
+      "Yup",
+    ],
+  },
+  {
     name: "course-nepal",
     date: "2024",
     github: "https://github.com/AyushJG/course-nepal",
