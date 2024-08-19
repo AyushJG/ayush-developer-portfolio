@@ -16,7 +16,7 @@ export const project_list = [
     github: "https://github.com/AyushJG/jg-resume-builder",
     go: "https://jg-resume-builder.onrender.com/",
     description: [
-      " Easy and convenient resume builder made using next and react js. ",
+      " Easy and convenient resume builder made using next and react js ",
     ],
     domains: [
       "HTML",
