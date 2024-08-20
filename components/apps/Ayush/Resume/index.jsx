@@ -2,7 +2,7 @@ import React from "react";
 
 const Resume = () => {
   // Path to the PDF file
-  const pdfUrl = "./files/ayush-cv-aug-9.pdf";
+  const pdfUrl = "./files/ayush-cv-aug-30.pdf";
 
   // Function to handle the PDF opening in a new tab
   const openPdfInNewTab = () => {
@@ -14,7 +14,7 @@ const Resume = () => {
       <div className="mt-4">
         <a
           href={pdfUrl}
-          download="ayush-cv-aug-9.pdf"
+          download="ayush-cv-aug-30.pdf"
           className="px-4 py-2 text-white rounded hover:bg-orange-600"
         >
           Download Resume

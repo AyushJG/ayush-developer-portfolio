@@ -28,8 +28,8 @@ const AboutMe = () => {
       <ul className=" mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list mb-4">
         <li className=" list-pc">
           I'm a <span className=" font-medium">Graduated Student</span>{" "}
-          currently working as Product Engineer. I've completed my 2.5 Year as
-          Product Engineer at{" "}
+          currently working as Product Engineer. I've completed more than 3 Year
+          as a Product Engineer at{" "}
           <u className=" cursor-pointer ">
             {" "}
             <a href="https://varicon.com.au/" target={"_blank"}>
