@@ -36,6 +36,13 @@ const AboutMe = () => {
               Varicon
             </a>{" "}
           </u>
+          &
+          <u className=" cursor-pointer ">
+            {" "}
+            <a href="https://pujamandu.com/" target={"_blank"}>
+              Pujamandu
+            </a>{" "}
+          </u>
           , and now I'm looking for full-time{" "}
           <span className=" font-medium"> Product/Frontend engineer</span>{" "}
           roles! ( Hit me up at{" "}
