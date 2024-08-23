@@ -28,7 +28,7 @@ const AboutMe = () => {
       <ul className=" mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list mb-4">
         <li className=" list-pc">
           I'm a <span className=" font-medium">Graduated Student</span>{" "}
-          currently working as Product Engineer. I've completed more than 4
+          currently working as Product Engineer. I have completed more than 4
           years as a Product Engineer / Web Developer at{" "}
           <u className=" cursor-pointer ">
             {" "}
@@ -43,7 +43,7 @@ const AboutMe = () => {
               Pujamandu
             </a>{" "}
           </u>
-          , and now I'm looking for full-time{" "}
+          combined, and now I'm looking for full-time{" "}
           <span className=" font-medium"> Product/Frontend engineer</span>{" "}
           roles! ( Hit me up at{" "}
           <a className="text-underline" href="mailto:ayushtimalcina@gmail.com">
