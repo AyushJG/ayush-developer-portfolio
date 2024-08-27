@@ -28,7 +28,7 @@ const AboutMe = () => {
       <ul className=" mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list mb-4">
         <li className=" list-pc">
           I'm a <span className=" font-medium">Graduated Student</span>{" "}
-          currently working as Product Engineer. I have completed more than 4
+          currently working as Product Engineer. I've completed more than 4
           years as a Product Engineer / Web Developer at{" "}
           <u className=" cursor-pointer ">
             {" "}
